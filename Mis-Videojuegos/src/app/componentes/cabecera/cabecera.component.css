@@ -1,0 +1,15 @@
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+div{
+    background-color: rgb(242, 212, 212);
+    border-bottom: 3px dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    align-items: flex-end;
+    padding-right: 5rem;
+}

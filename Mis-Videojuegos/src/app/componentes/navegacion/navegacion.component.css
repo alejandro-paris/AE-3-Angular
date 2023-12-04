@@ -1,0 +1,13 @@
+nav{
+    padding: 10px;
+}
+
+table th:hover{
+	background-color: rgb(242, 212, 212);
+	border-radius: 10px;
+}
+table {
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 30px;	
+}

@@ -1,0 +1,38 @@
+
+
+<h1>Bienvenido <!--<span>{{user.nombre}}</span>--></h1>
+
+<table>
+  <tr>
+    <th>IDENTIFICADOR</th>
+    <th>TITULO</th>
+    <th>VALORACION MEDIA</th>
+    <th>DETALLES</th>
+  </tr>
+  <tr *ngFor="let v of listaVideojuegos">
+    <td>{{v.id}}</td>
+    <td>{{v.titulo}}</td>
+    <td>{{v.valoracionMedia}}</td>
+    <td><a (click)="routingProQuery()">Ver detalles</a></td>
+  </tr>
+  <tr *ngIf="listaVideojuegos.length==0">
+    <td colspan="3">NO HAY VIDEOJUEGOS GUARDADOS</td>
+  </tr>
+</table>
+
+<h2>DAR DE ALTA UN VIDEOJUEGO</h2>
+
+<div>
+  <label>Titulo: </label>
+  <input type="text" [(ngModel)]="titulo"><br/>
+  <label>Compañía: </label>
+  <input type="text" [(ngModel)]="compania"><br/>
+  <label>Imagen: </label>
+  <input type="text" [(ngModel)]="imagen"><br/>
+  <label>Valoración media: </label>
+  <input type="number" [(ngModel)]="valoracionMedia">
+</div>
+<br/>
+<button (click)="alta()">Dar de alta</button>
+<button routerLink="">Volver al inicio</button>
+

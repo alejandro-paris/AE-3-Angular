@@ -1,0 +1,19 @@
+<p>
+  login works!
+</p>
+
+<h1>Bienvenido a Mis Videojuegos</h1>
+<h4>Por favor, introduce tu usuario y contraseña</h4>
+<div>
+  <label>Usuario:</label>
+  <input type="text" [(ngModel)]="username" placeholder="Intoduce tu nombre"><span *ngIf="error" class="error">Usuario no introducido</span><br/>
+  <label>Contraseña:</label>
+  <input type="text" [(ngModel)]="pass" placeholder="Intoduce tu contraseña"><span *ngIf="error2" class="error">Contraseña no introducida</span>
+  <p *ngIf="error3" class="confirmacion">Usuario y contraseña introducidos</p>
+</div>
+<button (click)="acceder()" id="btnValidar">Validar usuario</button>
+<div id="div"></div>
+<button id="btnAcceder" routerLink="/usuarios" *ngIf="habilitar">Acceder a pagina de Usuarios</button>
+<hr/>
+<p>Si no tiene usuario registrado, registrese aquí abajo:</p>
+<button routerLink="usuarios">Registrar nuevo usuario</button>

@@ -1,0 +1,29 @@
+
+<p>
+  usuarios works!
+</p>
+<h1>Dar de alta un usuario nuevo</h1>
+<h4>Por favor, introduce tus datos</h4>
+<div>
+  <label>Usuario:</label>
+  <input type="text" placeholder="Intoduce tu nombre" [(ngModel)]="nombre"><br/>
+  <label>Contraseña:</label>
+  <input type="text" placeholder="Intoduce tu contraseña" [(ngModel)]="password"><br/>
+</div>
+
+<button (click)="altaUsuario()">Registrar nuevo usuario</button>
+<h2>Usuarios registrados</h2>
+<table>
+  <tr>
+    <th>IDENTIFICADOR</th>
+    <th>NOMBRE</th>
+  </tr>
+  <tr *ngFor="let u of listaUsuarios">
+    <td >{{u.id}}</td>
+    <td>{{u.nombre}}</td>
+   </tr>
+  <tr *ngIf="listaUsuarios.length==0">
+    <td colspan="3">NO HAY USUARIOS REGISTRADOS</td>
+  </tr>
+</table>
+<button routerLink="">Volver</button>
