@@ -40,8 +40,8 @@ export class VideojuegosComponent implements OnInit {
    * Método que nos redirige al componente detalles-videojuego
    * @param id 
    */
-  public verDetalles (id :number) {
-    this.router.navigate(['detalles', id])
+  public verDetalle (id :number) {
+    this.router.navigate(['/detalles', id])
   }
 
   ngOnInit() {

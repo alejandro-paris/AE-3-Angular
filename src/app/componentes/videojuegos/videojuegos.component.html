@@ -13,7 +13,7 @@
     <td>{{v.id}}</td>
     <td>{{v.titulo}}</td>
     <td>{{v.valoracionMedia}}</td>
-    <td><a routerLink="/detalles">Ver detalles</a></td>
+    <td><a (click)="verDetalle(v.id)">Ver detalles</a></td>
   </tr>
   <tr *ngIf="listaVideojuegos.length==0">
     <td colspan="3">NO HAY VIDEOJUEGOS GUARDADOS</td>

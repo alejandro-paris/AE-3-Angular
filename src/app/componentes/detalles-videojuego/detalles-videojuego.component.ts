@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Videojuego } from 'src/app/entidades/videojuego';
 import { VideojuegosService } from 'src/app/servicios/videojuegos.service';
 
@@ -13,7 +13,9 @@ export class DetallesVideojuegoComponent implements OnInit {
 
 
 
-    constructor(private route : ActivatedRoute, private router : Router, private _videojuegoService : VideojuegosService){
+    constructor(private route : ActivatedRoute, 
+      private router : Router, 
+      private videojuegoService : VideojuegosService){
 
     }
 
@@ -23,7 +25,7 @@ export class DetallesVideojuegoComponent implements OnInit {
 
   public detallesVideojuego(){
     let id = +this.route.snapshot.paramMap.get('id')!;
-    this.videojuego = this._videojuegoService.accederVideojuego(id)!;
+    this.videojuego = this.videojuegoService.accederVideojuego(id)!;
   }
 
 }
