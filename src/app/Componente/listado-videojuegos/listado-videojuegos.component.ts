@@ -27,6 +27,7 @@ export class ListadoVideojuegosComponent implements OnInit {
   public seleccionar(idVideojuego : number) : void{
 
     let videojuego = this._videojuegoService.acceder(idVideojuego)
+
   }
 
   ngOnInit(): void {
