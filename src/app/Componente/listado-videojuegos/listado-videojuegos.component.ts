@@ -27,13 +27,6 @@ export class ListadoVideojuegosComponent implements OnInit {
   public seleccionar(idVideojuego : number) : void{
 
     let videojuego = this._videojuegoService.acceder(idVideojuego)
-
-    if(videojuego != null){
-      
-      console.log("seleccionar -> Heroe localizado")
-    } else{
-      console.log("seleccionar -> Heroe no encontado :(")
-    }
   }
 
   ngOnInit(): void {
