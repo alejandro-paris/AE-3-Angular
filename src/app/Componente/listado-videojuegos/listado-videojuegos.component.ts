@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Videojuego } from 'src/app/Entidad/videojuego';
 import { VideojuegoService } from 'src/app/servicios/videojuego.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -18,10 +18,19 @@ export class ListadoVideojuegosComponent implements OnInit {
   compañia : String = ""
   valoracionMedia : number = 0
 
+  usuarioActual : string =""
 
-  constructor(private _videojuegoService : VideojuegoService, private router: Router) {
+
+  constructor (
+
+    private _videojuegoService : VideojuegoService, 
+    private router: Router, 
+    private routerActive : ActivatedRoute
+
+    ) {
     this._videojuegoService = _videojuegoService
     this.listaVideojuegos = _videojuegoService.listar()
+    this.usuarioActual = routerActive.snapshot.queryParams["nombre"]
   }
 
   public seleccionar(idVideojuego : number) : void{

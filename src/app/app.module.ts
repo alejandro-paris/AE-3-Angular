@@ -8,6 +8,10 @@ import { DetalleVideojuegoComponent } from './Componente/detalle-videojuego/deta
 import { MenuComponent } from './Componente/menu/menu.component';
 import { ContactoComponent } from './Componente/contacto/contacto.component';
 import { NosotrosComponent } from './Componente/nosotros/nosotros.component';
+import { LoginComponent } from './Componente/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { CabeceraComponent } from './Componente/cabecera/cabecera.component';
+import { FooterComponent } from './Componente/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { NosotrosComponent } from './Componente/nosotros/nosotros.component';
     DetalleVideojuegoComponent,
     MenuComponent,
     ContactoComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    LoginComponent,
+    CabeceraComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

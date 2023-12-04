@@ -4,11 +4,16 @@ import { ListadoVideojuegosComponent } from './Componente/listado-videojuegos/li
 import { DetalleVideojuegoComponent } from './Componente/detalle-videojuego/detalle-videojuego.component';
 import { ContactoComponent } from './Componente/contacto/contacto.component';
 import { NosotrosComponent } from './Componente/nosotros/nosotros.component';
+import { LoginComponent } from './Componente/login/login.component';
 
 const routes: Routes = [
 
   {
     path:'',
+    component : LoginComponent
+  },
+  {
+    path:'listado',
     component : ListadoVideojuegosComponent
   },
   {

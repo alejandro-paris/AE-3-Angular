@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Videojuego } from 'src/app/Entidad/videojuego';
 import { VideojuegoService } from 'src/app/servicios/videojuego.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detalle-videojuego',
@@ -16,7 +15,6 @@ export class DetalleVideojuegoComponent implements OnInit {
   constructor(
     
     private route: ActivatedRoute,
-    private router: Router,
     private videojuegosService: VideojuegoService) {
   }
 

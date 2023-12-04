@@ -1,0 +1,14 @@
+
+<div class="contenedor-ppal">
+    <h1>Bienvenido a la web</h1>
+    <label for="inputUser"></label>
+    <input type="text" id="inputUser" [(ngModel)]="inputUser">
+    <p class="mensaje-error" *ngIf="!usuarioCorrecto">Usuario Incorrecto</p>
+    
+    <label for="inputPass"></label>
+    <input type="password" id="inputPass" [(ngModel)]="inputPass">
+    <p class="mensaje-error" *ngIf="!contrasenaCorrecta">Contraseña Incorrecto</p>
+    
+    
+    <button (click)="esValidoLogin()">Entrar</button>
+  </div>
