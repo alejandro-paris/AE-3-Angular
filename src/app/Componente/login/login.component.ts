@@ -30,7 +30,14 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.listaUsuarios = this._usuarioService.listar()
   }
-
+/**
+Método que comprueba si el usuario y la contraseña son correctos.
+Si todo es correcto, dirige al usuario a la pagina principal(Listado de videojuegos) le transmite el nombre de usuario.
+Además activa en el HTML los campos de error que señalan dónde se
+ha equivocado el usuario.
+@returns - true: Si usuario y contraseña son correctos
+false: Si usuario y contraseña no son correctos.
+*/
   public esValidoLogin():boolean {  
     for (let i = 0; i < this.listaUsuarios.length; i++) {
 
@@ -49,6 +56,7 @@ export class LoginComponent implements OnInit {
 
       }        
     }
+    //En el caso de que el usuario no exista, llega a este punto.
     this.usuarioCorrecto = false;
     return false;
   
