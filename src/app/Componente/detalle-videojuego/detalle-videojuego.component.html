@@ -1,0 +1,14 @@
+<div *ngIf="videojuego">
+
+    <div class="imagen">
+        <img [src]="videojuego.imagen" alt="{{ videojuego.titulo }}">
+    </div>
+    <div class = "informacion">
+        <h2>{{ videojuego.titulo }}</h2>
+        <p>Identicador: {{videojuego.id}}</p>
+        <p>Compañía: {{ videojuego.compania }}</p>
+        <p>Valoración Media: {{ videojuego.valoracionMedia }}</p>
+    </div>
+    <br/>
+    <button (click)="volverAlListado()">Volver al Listado</button>
+</div>

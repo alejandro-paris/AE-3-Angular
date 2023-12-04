@@ -1,0 +1,23 @@
+
+<div class="listado-videojuegos">
+    <h2>Listado de Videojuegos</h2>
+
+    <h3>Usuario:</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Valoracion Media</th>
+        </tr>
+        
+        <tr *ngFor="let videojuego of listaVideojuegos" class="videojuego-item" (click)="verDetalle(videojuego.id)">
+
+            <td>{{ videojuego.id }}</td>
+            <td>{{ videojuego.titulo }}</td>
+            <td>{{ videojuego.valoracionMedia }}</td>
+        </tr>
+        
+    </table>
+    
+</div>

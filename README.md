@@ -1,23 +1,27 @@
-Requerimiento 1
+# AE3Angular
 
-Se pide realizar una aplicación en Angular que muestre un listado-detalle de Videojuegos.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
-Los videojuegos tendrán un identificador, un título, una compañía, una imagen y una valoración media.
+## Development server
 
-La web mostrará una página con nuestro nombre de usuario y el listado de videojuegos (tendremos algunos videojuegos ya dados de alta), pero solo se mostrará en el listado el identificador, el título y la valoración media.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Si pulsamos en un videojuego, nos llevará a su detalle, el cual podremos ver todos los atributos del videojuego. Esta página tendrá también un botón para volver.
+## Code scaffolding
 
-La página web tendrá también una página que muestre los datos para contactarnos y otra página que hable sobre nosotros. A estas páginas accederemos mediante un menú de navegación (también en este menú tendremos el listado de videojuegos).
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Se valorarán los estilos en la aplicación, aplicar “routing” y comunicación entre componentes.
+## Build
 
-Valoración: 7 puntos sobre 10
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Requerimiento 2
+## Running unit tests
 
-Para entrar en la página deberemos de estar registrados, se mostrará una página de “login” al principio donde deberemos de poner nuestro nombre de usuario y nuestra contraseña. La aplicación tendrá algunos usuarios por defecto.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-En caso de que no podamos entrar en la página, se nos mostrará otra vez la página de “login” diciendo que no hemos podido acceder.
+## Running end-to-end tests
 
-Valoración: 3 puntos sobre 10
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

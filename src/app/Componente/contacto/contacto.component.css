@@ -1,0 +1,43 @@
+
+.contact-form {
+max-width: 400px;
+margin: auto;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 8px;
+}
+
+input,
+textarea {
+padding: 10px;
+margin-bottom: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+}
+
+textarea {
+resize: vertical; /* Permite redimensionar solo verticalmente */
+}
+
+button {
+background-color: #4caf50;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #45a049;
+}
+  
+h2, p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
