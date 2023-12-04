@@ -1,0 +1,27 @@
+
+
+<div class="table-container">
+    <h1>Listado de Videojuegos</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Compañia</th>
+          <th>Imagen</th>
+          <th>Valoración Media</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let video of listaVideo">
+          <td>{{video.id}}</td>
+          <td>{{video.titulo}}</td>
+          <td>{{video.compania}}</td>
+          <td>{{video.imagen}}</td>
+          <td>{{video.valoracionMedia}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

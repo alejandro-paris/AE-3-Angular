@@ -1,0 +1,31 @@
+/* En el archivo style.css o en el estilo del componente según tu estructura */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinear verticalmente los elementos */
+    height: 500px; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilos opcionales para la tabla izquierda */
+.table-container .table-left {
+    width: 40%; /* Ancho para la tabla de la izquierda */
+    border-collapse: collapse;
+}
+
+/* Estilos opcionales para la tabla derecha */
+.table-container .table-right {
+    width: 60%; /* Ancho para la tabla de la derecha */
+    border-collapse: collapse;
+    margin-top: 20px; /* Espaciado opcional arriba de la tabla de la derecha */
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+}
