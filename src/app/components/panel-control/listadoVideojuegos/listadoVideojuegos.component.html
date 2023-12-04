@@ -1,0 +1,16 @@
+<h3>Este es listado de videojuegos disponibles</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Título</th>
+    <th>Valoracion media</th>
+    <th>Detalles</th>
+  </tr>
+  <tr *ngFor="let ele of listaVideojuegos">
+    <td>{{ ele.id }}</td>
+    <td>{{ ele.titulo }}</td>
+    <td>{{ ele.valoracion }}</td>
+    <td><a ></a></td>
+
+  </tr>
+</table>
