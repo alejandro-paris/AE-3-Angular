@@ -30,9 +30,4 @@ export class DetalleVideojuegoComponent implements OnInit {
     this.videojuego = this.videojuegosService.acceder(id)!;
   }
 
-  volverAlListado(): void {
-    // Navega de nuevo al listado de videojuegos
-    this.router.navigate(['/']);
-  }
-
 }

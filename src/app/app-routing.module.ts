@@ -15,10 +15,6 @@ const routes: Routes = [
     path:'videojuego/:id', component: DetalleVideojuegoComponent
   },
   {
-    path:'listaVideojuegos',
-    component : ListadoVideojuegosComponent
-  },
-  {
     path:'contacto',
     component : ContactoComponent
   },

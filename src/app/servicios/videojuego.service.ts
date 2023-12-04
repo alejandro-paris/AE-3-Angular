@@ -21,7 +21,7 @@ export class VideojuegoService {
     videojuego = new Videojuego()
     videojuego.id = this.contadorId++
     videojuego.titulo = "Red Dead Redemption 2"
-    videojuego.compania ="RockStar"
+    videojuego.compania ="Rockstar"
     videojuego.imagen = "./assets/img/rdr2.jpg"
     videojuego.valoracionMedia= 5
     this.listaVideojuegos.push(videojuego)
