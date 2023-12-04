@@ -3,15 +3,10 @@
   detalles-videojuego works!
 </p>
 
-<p>ID:  {{paramQuery5}} </p>
-<p>TITULO: {{paramQuery1}}</p>
-<p>COMPAÑIA:  {{paramQuery2}}</p>
-<p>IMAGEN:  {{paramQuery3}}</p>
-<p>VALORACION MEDIA:  {{paramQuery4}}</p>
+<p>ID:  {{videojuego.id}} </p>
+<p>TITULO: {{videojuego.titulo}}</p>
+<p>COMPAÑIA:  {{videojuego.compania}}</p>
+<p>IMAGEN: </p> <img [src]="videojuego.imagen">
+<p>VALORACION MEDIA:  {{videojuego.valoracionMedia}}</p>
 
 <button routerLink="">Volver al inicio</button>
-
-
-<div class="row">
-  {{videojuego.id}} - {{videojuego.titulo}} - {{videojuego.compania}} - {{videojuego.imagen}} - {{videojuego.valoracionMedia}}
-  </div>

@@ -1,6 +1,6 @@
 
 
-<h1>Bienvenido <!--<span>{{user.nombre}}</span>--></h1>
+<h1>Bienvenido</h1>
 
 <table>
   <tr>
@@ -13,7 +13,7 @@
     <td>{{v.id}}</td>
     <td>{{v.titulo}}</td>
     <td>{{v.valoracionMedia}}</td>
-    <td><a (click)="routingProQuery()">Ver detalles</a></td>
+    <td><a routerLink="/detalles">Ver detalles</a></td>
   </tr>
   <tr *ngIf="listaVideojuegos.length==0">
     <td colspan="3">NO HAY VIDEOJUEGOS GUARDADOS</td>
@@ -33,6 +33,6 @@
   <input type="number" [(ngModel)]="valoracionMedia">
 </div>
 <br/>
-<button (click)="alta()">Dar de alta</button>
+<button >Dar de alta</button>
 <button routerLink="">Volver al inicio</button>
 
