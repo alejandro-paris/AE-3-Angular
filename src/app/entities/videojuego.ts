@@ -1,25 +1,17 @@
 export class Videojuego {
 
-    private _id: number;
+    private _id: number = 0;
 
-    private _titulo: string;
+    private _titulo: string = "";
 
-    private _compania: string;
+    private _compania: string = "";
 
-    private _imagen: string;
+    private _imagen: string = "";
 
-    private _valoracion: number;
+    private _valoracion: number = 0;
 
-
-    /**
-     * Atributo que utilizamos para asignar un ID a cada una de las 
-     * instancias. Es estático para no vincularlo con el ciclo de vida
-     * de los objetos
-     */
-    private static contadorId : number = 1;
 
     constructor (titulo:string, compania:string, imagen:string, valoracion:number) {
-        this._id = Videojuego.contadorId++;
         this._titulo = titulo;
         this._compania = compania;
         this._imagen = imagen;

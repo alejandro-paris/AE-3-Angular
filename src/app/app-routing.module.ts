@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { PanelControlComponent } from './components/panel-control/panel-control.component';
 import { ListadoVideojuegosComponent } from './components/panel-control/listadoVideojuegos/listadoVideojuegos.component';
+import { VerDetalleVideojuegoComponent } from './components/panel-control/verDetalleVideojuego/verDetalleVideojuego.component';
 
 const routes: Routes = [
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   //al router-outlet interno de ese componente.
   children: [
     {path: 'listado-videojuegos', component: ListadoVideojuegosComponent},
-    { path: '', redirectTo: 'listado-videojuegos', pathMatch: 'full' }, // Ruta por defecto dentro de 'panel-control'
+    {path: 'ver-detalle', component: VerDetalleVideojuegoComponent},
+    { path: '', redirectTo: 'listado-videojuegos', pathMatch: 'full' }// Ruta por defecto dentro de 'panel-control'
   ]
 }
 

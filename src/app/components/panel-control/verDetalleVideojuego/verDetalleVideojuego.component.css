@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+}
+li {
+    margin-bottom: 2rem;
+}
+.contenedor-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.2rem;
+}
+.imagen {
+    width: 25rem;
+}

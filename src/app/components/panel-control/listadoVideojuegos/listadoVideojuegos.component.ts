@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Videojuego } from 'src/app/entities/videojuego';
+import { VideojuegoService } from 'src/app/services/videojuego.service';
 
 @Component({
   selector: 'app-listadoVideojuegos',
@@ -13,22 +14,22 @@ export class ListadoVideojuegosComponent implements OnInit {
   listaVideojuegos : Array<Videojuego> = [];
 
 
-  constructor() { 
-
-    let videojuego = new Videojuego("FIFA 28", "EA Sports", "logo-fifa-webbp",7);
-    this.listaVideojuegos.push(videojuego);
-
-    videojuego = new Videojuego("Nintendogs", "Nintendo", "logo-nintedogs.jpg",7.5);
-    this.listaVideojuegos.push(videojuego);
-
-    videojuego = new Videojuego("Zelda Breath of the Wild", "Nintendo", "logo-zelda_breath_of_the_wild.jpeg",10);
-    this.listaVideojuegos.push(videojuego);
-
-    videojuego = new Videojuego("League of Legends", "Riot Games", "logo-zelda_breath_of_the_wild.jpeg",8.5);
-    this.listaVideojuegos.push(videojuego);
+  constructor(private _videojuego : VideojuegoService, private router : Router) { 
+    this._videojuego = _videojuego;
+    this.listaVideojuegos = _videojuego.listar();
   };
   ngOnInit() {
     
+  }
+
+  /**
+   * Este método sirve para redirigir al usuario a la página verDetalle,
+   * añadiendo en la URL el id del objeto que tiene que recuperar. 
+   * @param id El id del objeto sobre el que el usuario hace clic. Nos lo
+   *           envia el HTML. 
+   */
+  public verDetalle(id:number):void {
+    this.router.navigateByUrl(`panel-control/ver-detalle?id=${id}`)
   }
 
 }

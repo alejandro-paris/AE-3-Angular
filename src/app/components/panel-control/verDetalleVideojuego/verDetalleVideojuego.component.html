@@ -1,3 +1,15 @@
-<p>
-  verDetalleVideojuego works!
-</p>
+<div class="contenedor-detalle">
+  <div class="imagen">
+    <img [src]="rutaVideojuego" alt="">
+  </div>
+  <div class="col-der">
+    <li><strong>ID: </strong>{{videojuego.id}}</li>
+    <li><strong>Titulo: </strong>{{videojuego.titulo}}</li>
+    <li><strong>Compañia: </strong>{{videojuego.compania}}</li>
+    <li><strong>Valoración: </strong>{{videojuego.valoracion}}</li>
+
+  </div>
+
+</div>
+
+<a routerLink="/panel-control">Volver a la home</a>
