@@ -41,6 +41,14 @@ export class VideojuegoService {
     videojuego.imagen = "./assets/img/wrc.jpg"
     videojuego.valoracionMedia= 5
     this.listaVideojuegos.push(videojuego)
+
+    videojuego = new Videojuego()
+    videojuego.id = this.contadorId++
+    videojuego.titulo = "Call Of Duty"
+    videojuego.compania ="Activision"
+    videojuego.imagen = "./assets/img/cod.jpg"
+    videojuego.valoracionMedia= 2
+    this.listaVideojuegos.push(videojuego)
   }
 
   public acceder (id : number) : Videojuego | null {
