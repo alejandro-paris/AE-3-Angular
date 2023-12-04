@@ -36,6 +36,7 @@ export class UsuariosService {
     this.listaUsuarios.push(usuario)
    }
 
+//metodo que devuelve la lista de usuarios.
    public listar() : Usuario[]{
     return this.listaUsuarios
   }

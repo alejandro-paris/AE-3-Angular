@@ -51,6 +51,7 @@ export class VideojuegoService {
     this.listaVideojuegos.push(videojuego)
   }
 
+  //metodo para acceder al videojuego a partir de su id. 
   public acceder (id : number) : Videojuego | null {
     for (let a = 0; a<this.listaVideojuegos.length; a++){
       if(this.listaVideojuegos[a].id == id){
@@ -60,6 +61,7 @@ export class VideojuegoService {
     return null
   }
 
+  //metodo que devuelve la lista de videojuegos.
   public listar() : Videojuego[]{
     return this.listaVideojuegos
   }

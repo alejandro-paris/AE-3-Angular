@@ -33,12 +33,6 @@ export class ListadoVideojuegosComponent implements OnInit {
     this.usuarioActual = routerActive.snapshot.queryParams["nombre"]
   }
 
-  public seleccionar(idVideojuego : number) : void{
-
-    let videojuego = this._videojuegoService.acceder(idVideojuego)
-
-  }
-
   ngOnInit(): void {
     
   }
