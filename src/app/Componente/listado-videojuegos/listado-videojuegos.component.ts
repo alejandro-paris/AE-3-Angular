@@ -10,17 +10,18 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./listado-videojuegos.component.css']
 })
 export class ListadoVideojuegosComponent implements OnInit {
-
+  
+//Lista de videojuegos para mostrar en el Html
   listaVideojuegos : Videojuego[] = []
-
+//Atributos de los videojuegos que utilizamos en Html
   id : number = 0
   titulo : String = ""
   compañia : String = ""
   valoracionMedia : number = 0
-
+//Usuario con el que se inicia la sesion 
   usuarioActual : string =""
 
-
+//Iniciamos constructor y llamamos al servicio del videojuego para traer el listado de juegos.
   constructor (
 
     private _videojuegoService : VideojuegoService, 
@@ -36,7 +37,7 @@ export class ListadoVideojuegosComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
+//Metodo que se ejecuta en Html para redirecccionar a ver detalle del videojuego. El parametro llega desde el Html
   verDetalle(id:number):void {
     this.router.navigate(['/videojuego',id])
   }
